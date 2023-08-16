@@ -4,3 +4,9 @@ body{
 h1{
     font-size: 20px;
 }
+h2{
+ background-color: 30px;   
+}
+h3{
+    font-family: 'Courier New', Courier, monospace;
+}
