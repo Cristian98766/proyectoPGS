@@ -6,7 +6,8 @@ h1{
 }
 h2{
  background-color: 30px;
- font-size: large;   
+ font-size: large;
+ font-weight: 20px;   
 }
 h3{
     font-family: 'Courier New', Courier, monospace;
