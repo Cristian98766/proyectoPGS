@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="home.css">
+    <script src="login.js" defer></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
 
     <title>UniBank</title>
     </head>
@@ -24,7 +26,46 @@
      <br>
      <br>
      <br>
-     <button class="btn succes">Registrate</button>
+     <a href="#contenedor"><button class="btn succes">Registrate</button></a>
      <button class="btn1 succes"><a href="login.html"> Iniciar Sesion</button></a>
         <div class="boton"></div>
      </div>
+
+     <div id="contenedor" class="ventana">
+        <div class="vent">
+            <a href="#" title="cerrar"> <img src="img/error.png" alt="error" id="x"> </a>
+            <form action="" class="formulario">
+                <label for="nombre" class="campo">Nombre</label><br>
+                <input type="text" class="dato" name="nombre" id="nombre" placeholder="Nombre"><br>
+
+                <label for="apellido" class="campo"">Apellido</label><br>
+                <input type="text" class="dato" name="apellido" id="apellido" placeholder="Apellido"><br>
+
+                <label for="correo" class="campo">Correo electrónico</label><br>
+                <input type="text" class="dato" name="correo" id="correo" placeholder="Correo electrónico"><br>
+
+                <label for="pass" class="campo">Contraseña</label><br>
+                <input type="password" class="dato" name="pass" id="pass" placeholder="Contraseña"><br>
+
+                <label for="pass2" class="campo" id="confirm">Confirmar contraseña</label><br>
+                <p id="mensaje" class="campo">Las contraseñas no coinciden</p>
+                <input type="password" class="dato" name="pass2" id="pass2" placeholder="Confirmar contraseña"><br>
+
+                <label for="estudiante" class="campo">
+                    ¿Eres estudiante del ITM?
+                </label><br>
+                <div class="campo">
+                    <label for="si" class="estudiante">Sí</label>
+                    <input type="radio" name="estudiante" id="si">
+                    <label for="no" class="estudiante">No</label>
+                    <input type="radio" name="estudiante" id="no"><br>
+                </div>
+
+                <button type="submit" class="confirmar" id="confirmar"><b>Confrimar registro</b></button>
+                <p id="aviso">Debe diligenciar todos los campos</p>
+                
+            </form>
+        </div>  
+    </div>
+
+    </body>

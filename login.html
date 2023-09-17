@@ -5,24 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="csslogin.css">
     <title>Loggeate o registrate</title>
+    <script src="login.js" defer></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 <body>
     <div class="Unibank">
         <h1>Unibank</h1>
         <p class="descripcion">
-            Unibank te ayudará a realizar <br>
+            Unibank te ayudará a realizar
             cualquier gestión económica con mayor facilidad
         </p>
     </div>
     <div class="loggin">
         <form action="loginPage.css">
-            <input type="email" placeholder="Correo electrónico">
-            <input type="password" placeholder="Contraseña">
+            <input type="email" placeholder="Correo electrónico" class="principal">
+            <input type="password" placeholder="Contraseña" class="principal">
         </form>
 
         <button id="iniciarSesion" >
             Iniciar sesión
         </button>
+        <a href="#contenedor" id="reg">
+        <button id="registrarse">
+            Registrarse
+        </button>
+        </a>
+    </div>
+
+    <div id="contenedor" class="ventana">
+        <div class="vent">
+            <a href="#" title="cerrar"> <img src="img/error.png" alt="error" id="x"> </a>
+            <form action="" class="formulario">
+                <label for="nombre" class="campo">Nombre</label><br>
+                <input type="text" class="dato" name="nombre" id="nombre" placeholder="Nombre"><br>
+
+                <label for="apellido" class="campo"">Apellido</label><br>
+                <input type="text" class="dato" name="apellido" id="apellido" placeholder="Apellido"><br>
+
+                <label for="correo" class="campo">Correo electrónico</label><br>
+                <input type="text" class="dato" name="correo" id="correo" placeholder="Correo electrónico"><br>
+
+                <label for="pass" class="campo">Contraseña</label><br>
+                <input type="password" class="dato" name="pass" id="pass" placeholder="Contraseña"><br>
+
+                <label for="pass2" class="campo" id="confirm">Confirmar contraseña</label><br>
+                <p id="mensaje" class="campo">Las contraseñas no coinciden</p>
+                <input type="password" class="dato" name="pass2" id="pass2" placeholder="Confirmar contraseña"><br>
+
+                <label for="estudiante" class="campo">
+                    ¿Eres estudiante del ITM?
+                </label><br>
+                <div class="campo">
+                    <label for="si">Sí</label>
+                    <input type="radio" name="estudiante" id="si">
+                    <label for="no">No</label>
+                    <input type="radio" name="estudiante" id="no"><br>
+                </div>
+
+                <button type="submit" class="confirmar" id="confirmar"><b>Confrimar registro</b></button>
+                <p id="aviso">Debe diligenciar todos los campos</p>
+                
+            </form>
+        </div>  
     </div>
     
 </body>

@@ -47,18 +47,19 @@ h1{
     flex-direction: column;
     box-sizing: border-box;
     width: 500px;
-    height: 300px;
+    height: 367px;
     background-color: #000;
-    margin-top: 200px;
+    margin-top: 140px;
     margin-left: 100px;
-    margin-right: 100px;
+    margin-right: 5%;
     background-color: white;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     align-items: center;
     text-align: center;
     padding: 10px;
+    padding-top: 3%;
 }
-input{
+.principal{
     width: 400px;
     height: 50px;
     border-radius: 10px;
@@ -73,7 +74,7 @@ input{
     margin-top: 15px;
     margin-bottom: 10px;
 }
-#iniciarSesion{
+#iniciarSesion,#registrarse{
     cursor: pointer;
     border-radius: 10px;
     background-color: rgb(255, 90, 30);
@@ -90,5 +91,79 @@ input{
     background: linear-gradient(to right, rgb(253, 164, 81), rgb(255, 91, 15));
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     stroke: #EFEFEF;
-
 }
+#reg{
+    text-decoration: none;
+    color: inherit;
+}
+#x{
+    width: 5%;
+}
+
+.vent{
+    background:linear-gradient(to top, rgb(245, 178, 116), rgb(255, 91, 15));
+    width:400px;
+    padding: 10px 20px;
+    margin:2% auto;
+    position: relative;
+    border-radius: 10px;
+  }
+
+#contenedor:target{
+    opacity:1;
+    pointer-events:auto;
+}
+.ventana{
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:0px;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all 1s;
+}
+
+.campo,.dato{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-block: -1%;
+    font-size: small;
+}
+.campo{
+    font-family: 'Alfa Slab One';
+}
+
+.dato{
+    width: 60%;
+    padding: 3%;
+}
+
+.confirmar{
+    display: flex;
+    margin: 5% auto;
+    padding: 3%;
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+#mensaje{
+    display: none;
+    font-size: smaller;
+    color: red;
+    margin-bottom: 1.5%;
+    text-align: center;
+}
+
+#aviso{
+    display: none;
+    font-size: small;
+    text-align: center;
+    margin-top: -3%;
+    color: red;
+    font-family: 'Alfa Slab One';
+}
+
