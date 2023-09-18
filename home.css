@@ -112,7 +112,17 @@ header{
     font-family: fuente5;
     font-size: 30px;
 }
-
+.btn3{
+    background:-webkit-linear-gradient(top,#59b8f7, #dde7e9);
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    position: relative;
+    left: 1000px;
+    top: 10px;
+    font-family: fuente5;
+    font-size: 30px;
+}
 
 
 @font-face {

@@ -243,7 +243,7 @@ p{
    font-weight: normal;
 }
 .btn1{
-    background:-webkit-linear-gradient(top,#ecdada, #dde7e9);
+    background:-webkit-linear-gradient(top,#59b8f7, #dde7e9);
     width: 200px;
     height: 50px;
     border-radius: 30px;
@@ -253,6 +253,7 @@ p{
     font-family: fuente5;
     font-size: 30px;
 }
+
 
 @font-face {
     font-family:'fuente5';
