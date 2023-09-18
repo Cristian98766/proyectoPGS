@@ -1,3 +1,16 @@
+function mostrarVentana() {
+    $("#registrarse").click(function () {
+       
+        $("#contenedor").fadeIn();;
+    })
+}
+
+function ocultarVentana() {
+    $("#x").click(function () {
+        $("#contenedor").css("display", "none");;;
+    })
+}
+
 function validarContraseña() {
     if (($("#pass2").val()!=$("#pass").val()) && ($("#pass2").val()!="")) {
         $("#mensaje").show();
@@ -28,6 +41,7 @@ $("#x").click(function () {
 })
 
 
+mostrarVentana();
 $("#pass2").on('input', function () {
     validarContraseña();
 });
@@ -36,5 +50,6 @@ $("#pass").on('input', function () {
 });
 
 validarFormulario();
+ocultarVentana();
 
 

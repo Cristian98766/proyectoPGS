@@ -109,20 +109,14 @@ h1{
     border-radius: 10px;
   }
 
-#contenedor:target{
-    opacity:1;
-    pointer-events:auto;
-}
-.ventana{
-    background-color: rgba(0,0,0,.8);
-    position:fixed;
-    top:0px;
-    right:0;
-    bottom:0;
-    left:0;
-    opacity:0;
-    pointer-events:none;
-    transition: all 1s;
+  #contenedor{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0,0.5);
+    display: none;
 }
 
 .campo,.dato{
