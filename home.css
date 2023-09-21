@@ -18,7 +18,7 @@ header{
     position: fixed;
     top: 0 ;
     left: 0;
-
+    z-index: 1;
 }
 .azul{
     background-color: rgb(31, 118, 158);
@@ -149,7 +149,7 @@ header{
     border-radius: 10px;
   }
 
-  #contenedor{
+  .ventana{
     position: fixed;
     top: 0px;
     right: 0px;
@@ -157,6 +157,7 @@ header{
     left: 0px;
     background-color: rgba(0, 0, 0,0.5);
     display: none;
+    z-index: 2;
 }
 
 .campo,.dato{
@@ -200,7 +201,7 @@ header{
     color: red;
     font-family: 'Alfa Slab One';
 }
-#x{
+.cerrar{
     width: 5%;
 }
 .estudiante{
@@ -208,4 +209,16 @@ header{
 }
 input{
     font-family: Arial, Helvetica, sans-serif;
+}
+#melo{
+    margin-top: 5%;
+    margin-bottom: 6%;
+}
+#exito{
+    margin-top: 15%;
+}
+#comprobado{
+    width: 10%;
+    margin-left: 4%;
+    margin-top: -4%;
 }

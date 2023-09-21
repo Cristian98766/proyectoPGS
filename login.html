@@ -33,7 +33,7 @@
 
     <div id="contenedor" class="ventana">
         <div class="vent">
-            <a href="#" title="cerrar"> <img src="img/error.png" alt="error" id="x"> </a>
+            <a href="#" title="cerrar"> <img src="img/error.png" alt="error" id="x" class="cerrar"> </a>
             <form action="" class="formulario">
                 <label for="nombre" class="campo">Nombre</label><br>
                 <input type="text" class="dato" name="nombre" id="nombre" placeholder="Nombre"><br>
@@ -61,12 +61,20 @@
                     <input type="radio" name="estudiante" id="no"><br>
                 </div>
 
-                <button type="submit" class="confirmar" id="confirmar"><b>Confrimar registro</b></button>
+                <button type="button" class="confirmar" id="confirmar"><b>Confrimar registro</b></button>
                 <p id="aviso">Debe diligenciar todos los campos</p>
                 
             </form>
         </div>  
     </div>
+
+    <div id="exitoso" class="ventana">
+        <div class="vent" id="exito">
+            <img src="img/error.png" alt="error" id="X" class="cerrar">
+            <p class="campo" id="melo">El registro ha sido exitoso<img src="img/exitoso.png" alt="exitoso" id="comprobado"></p>
+            <button type="button" class="confirmar" id="aceptar">Aceptar</button>
+        </div> 
+    </div>    
     
 </body>
 </html>

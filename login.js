@@ -1,6 +1,6 @@
 function mostrarVentana() {
     $("#registrarse").click(function () {
-       
+
         $("#contenedor").fadeIn();;
     })
 }
@@ -23,15 +23,28 @@ function validarContraseña() {
 };
         
 
+function mostrarRegistroExitoso() {
+    $("#contenedor").css("display", "none");
+    $("#exitoso").fadeIn();
+}
+
+function ocultarRegistroExitoso() {
+    $("#aceptar, #X").click(function () { 
+        $("#exitoso").css("display", "none");
+        location.reload();
+    });
+}
+
+        
+
 function validarFormulario() {
     $("#confirmar").click(function () { 
         if (($("#nombre").val()=="")||($("#apellido").val()=="")||($("#correo").val()=="")||($("#pass").val()=="")||($("#pass2").val()=="")||(!validarContraseña())||((!$("#si").prop("checked"))&&(!$("#no").prop("checked")))) {
             if(($("#nombre").val()=="")||($("#apellido").val()=="")||($("#correo").val()=="")||($("#pass").val()=="")||($("#pass2").val()=="")||((!$("#si").prop("checked"))&&(!$("#no").prop("checked")))){
                 $("#aviso").show();
             }
-            return false;
         }else{
-            return true;
+            mostrarRegistroExitoso();
         };
     });
 }
@@ -51,5 +64,6 @@ $("#pass").on('input', function () {
 
 validarFormulario();
 ocultarVentana();
+ocultarRegistroExitoso();
 
 
