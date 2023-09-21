@@ -9,56 +9,38 @@
 }
 body{
     background-color: rgb(255, 255, 255);
+    min-width: 1000px;
 }
 header{
     width: 100%;
     height: 70px ;
-    background: #da800a ;
+    background-color: #da800a ;
     color: #fff;
     position: fixed;
     top: 0 ;
     left: 0;
     z-index: 1;
+    padding-bottom: 0px;
 }
-.azul{
+.colores{
+    width: 25%;
+    height: 10px;
+    float: left;
+    margin-top: 10px;
+}
+#azul{
     background-color: rgb(31, 118, 158);
-    width: 430px;
-    height: 10px;
-    top: 70px;
-    position: fixed;
 }
-.amarillo{
+#amarillo{
     background-color: rgb(233, 215, 52);
-    width: 430px;
-    height: 10px;
-    left: 350px;
-    position: fixed;
-    top: 70px;
 }
-.verde{
+#verde{
     background-color: rgb(29, 194, 14);
-    width: 480px;
-    height: 10px;
-    left: 700px;
-    position: fixed;
-    top: 70px;
 }
-.rojo{
+#rojo{
     background-color: rgb(201, 5, 5);
-    width: 430px;
-    height: 10px;
-    left: 1000px;
-    position: fixed;
-    top: 70px;
 }
-.azul1{
-    background-color: rgb(67, 212, 212);
-    width:90px;
-    height: 10px;
-    left: 940px;
-    position: fixed;
-    top: 30px;
-}
+
 .tex{
     font-family: fuente7;
     font-size: 70px;
@@ -68,49 +50,46 @@ header{
     font-style: normal;
     font-weight: normal;
     position: relative;
-    margin-top: 200px;
+    margin-top: 170px;
 }
 .banco{
-    height: 50px;
-    width: 50px;
+    width: 400px;
     position: relative;
-    left: 300px;
     align-items: center;
     margin-top: -40px;
     flex-wrap: wrap;
+    margin: auto;
+    margin-top: 3%;
+    display: flex;
+}
+#logo{
+    cursor: pointer;
 }
 .tex2{
     font-family: fuente7;
     font-size: 90px;
     color: rgb(34, 210, 216);
-    text-align: center;
-    align-items: center;
+    width: 70%;
     font-style: normal;
     font-weight: normal;
-    position: relative;
-    margin-top: 0px;
+}
+#botones{
+    margin: auto;
+    margin-top: 3%;
+    width: 450px;
+    display: flex;
 }
 
 .btn{
     background:-webkit-linear-gradient(top,#ecdada, #dde7e9);
-    width: 200px;
+    width: 50%;
     height: 50px;
     border-radius: 30px;
     position: relative;
-    left: 400px;
     font-family: fuente5;
     font-size: 30px;
     cursor: pointer;
-}
-.btn1{
-    background:-webkit-linear-gradient(top,#ecdada, #dde7e9);
-    width: 200px;
-    height: 50px;
-    border-radius: 30px;
-    position: relative;
-    left: 440px;
-    font-family: fuente5;
-    font-size: 30px;
+    margin-inline: 2%;
 }
 .btn3{
     background:-webkit-linear-gradient(top,#59b8f7, #dde7e9);
@@ -118,8 +97,8 @@ header{
     height: 50px;
     border-radius: 30px;
     position: relative;
-    left: 1000px;
-    top: 10px;
+    left: 75%;
+    margin-top: 0.3%;
     font-family: fuente5;
     font-size: 30px;
 }

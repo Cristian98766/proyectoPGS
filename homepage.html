@@ -15,66 +15,65 @@
         <header>
             <button class="btn3 succes"><a href="index.html">volver</button></a>
             <div class="titlep"><a href="homepage.html"></a> </div>
-            <div class="azul">  </div>
-            <div class="amarillo">  </div>
-            <div class="verde">  </div>
-            <div class="rojo">  </div>
+            <div class="colores" id="azul">  </div>
+            <div class="colores" id="amarillo">  </div>
+            <div class="colores" id="verde">  </div>
+            <div class="colores" id="rojo">  </div>
                 </div>
         </header>
-    <div class="tex">HAZTE MIEMBRO DE<BR>NUESTRA COMUNIDAD</div>
-        <div class="banco"> <img src="img/mainLogoOrange.png"alt="" width="250" height="250"></div>
-     <div class="tex2">NIBANK</div>
-     <br>
-     <br>
-     <br>
-     <button class="btn succes" id="registrarse">Registrate</button>
-     <button class="btn1 succes"><a href="login.html"> Iniciar Sesion</button></a>
-        <div class="boton"></div>
-     </div>
+    
+        <div id="contenido">
+            <div class="tex">HAZTE MIEMBRO DE<BR>NUESTRA COMUNIDAD</div>
+            <div class="banco"><img src="img/mainLogoOrange.png"alt="UniBank" width="30%" id="logo" title="UniBank"><p class="tex2">NIBANK</p></div>
 
-     <div id="contenedor" class="ventana">
-        <div class="vent">
-            <a href="#" title="cerrar"> <img src="img/error.png" alt="error" id="x" class="cerrar"> </a>
-            <form action="" class="formulario">
-                <label for="nombre" class="campo">Nombre</label><br>
-                <input type="text" class="dato" name="nombre" id="nombre" placeholder="Nombre"><br>
+            <div id="botones">
+                <button class="btn succes" id="registrarse">Registrate</button>
+                <button class="btn succes"><a href="login.html"> Iniciar Sesion</button></a>
+            </div>
 
-                <label for="apellido" class="campo"">Apellido</label><br>
-                <input type="text" class="dato" name="apellido" id="apellido" placeholder="Apellido"><br>
+            <div id="contenedor" class="ventana">
+                <div class="vent">
+                    <a href="#" title="cerrar"> <img src="img/error.png" alt="error" id="x" class="cerrar"> </a>
+                    <form action="" class="formulario">
+                        <label for="nombre" class="campo">Nombre</label><br>
+                        <input type="text" class="dato" name="nombre" id="nombre" placeholder="Nombre"><br>
 
-                <label for="correo" class="campo">Correo electrónico</label><br>
-                <input type="text" class="dato" name="correo" id="correo" placeholder="Correo electrónico"><br>
+                        <label for="apellido" class="campo"">Apellido</label><br>
+                        <input type="text" class="dato" name="apellido" id="apellido" placeholder="Apellido"><br>
 
-                <label for="pass" class="campo">Contraseña</label><br>
-                <input type="password" class="dato" name="pass" id="pass" placeholder="Contraseña"><br>
+                        <label for="correo" class="campo">Correo electrónico</label><br>
+                        <input type="text" class="dato" name="correo" id="correo" placeholder="Correo electrónico"><br>
 
-                <label for="pass2" class="campo" id="confirm">Confirmar contraseña</label><br>
-                <p id="mensaje" class="campo">Las contraseñas no coinciden</p>
-                <input type="password" class="dato" name="pass2" id="pass2" placeholder="Confirmar contraseña"><br>
+                        <label for="pass" class="campo">Contraseña</label><br>
+                        <input type="password" class="dato" name="pass" id="pass" placeholder="Contraseña"><br>
 
-                <label for="estudiante" class="campo">
-                    ¿Eres estudiante del ITM?
-                </label><br>
-                <div class="campo">
-                    <label for="si" class="estudiante">Sí</label>
-                    <input type="radio" name="estudiante" id="si">
-                    <label for="no" class="estudiante">No</label>
-                    <input type="radio" name="estudiante" id="no"><br>
-                </div>
+                        <label for="pass2" class="campo" id="confirm">Confirmar contraseña</label><br>
+                        <p id="mensaje" class="campo">Las contraseñas no coinciden</p>
+                        <input type="password" class="dato" name="pass2" id="pass2" placeholder="Confirmar contraseña"><br>
 
-                <button type="button" class="confirmar" id="confirmar"><b>Confrimar registro</b></button>
-                <p id="aviso">Debe diligenciar todos los campos</p>
-                
-            </form>
-        </div>  
-    </div>
+                        <label for="estudiante" class="campo">
+                            ¿Eres estudiante del ITM?
+                        </label><br>
+                        <div class="campo">
+                            <label for="si" class="estudiante">Sí</label>
+                            <input type="radio" name="estudiante" id="si">
+                            <label for="no" class="estudiante">No</label>
+                            <input type="radio" name="estudiante" id="no"><br>
+                        </div>
 
-    <div id="exitoso" class="ventana">
-        <div class="vent" id="exito">
-            <img src="img/error.png" alt="error" id="X" class="cerrar">
-            <p class="campo" id="melo">El registro ha sido exitoso<img src="img/exitoso.png" alt="exitoso" id="comprobado"></p>
-            <button type="button" class="confirmar" id="aceptar">Aceptar</button>
-        </div> 
-    </div>    
+                        <button type="button" class="confirmar" id="confirmar"><b>Confrimar registro</b></button>
+                        <p id="aviso">Debe diligenciar todos los campos</p>
+                        
+                    </form>
+                </div>  
+            </div>
 
+            <div id="exitoso" class="ventana">
+                <div class="vent" id="exito">
+                    <img src="img/error.png" alt="error" id="X" class="cerrar">
+                    <p class="campo" id="melo">El registro ha sido exitoso<img src="img/exitoso.png" alt="exitoso" id="comprobado"></p>
+                    <button type="button" class="confirmar" id="aceptar">Aceptar</button>
+                </div> 
+            </div>    
+        </div>
     </body>
