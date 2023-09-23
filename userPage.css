@@ -1,0 +1,82 @@
+body{
+    margin: 0px;
+}
+
+header{
+    font-family: sans-serif;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 0px 0px 0px;
+    padding: 20px 20px 20px 20px;
+    position: sticky;
+}
+a{
+    text-decoration: none;
+}
+.saldo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.saldo img{
+    width: 40%;
+    height: 40%;
+    fill: black;
+}
+.saldo a{
+    font-size: 20px;
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+}
+.logo img{
+    width: 5em;
+    height: 5em;
+
+}
+.logo h2{
+    margin-left: 10px;
+}
+.usuario{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.usuario img{
+    width: 50px;
+}
+.usuario a{
+    margin-left: 10px;
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.panel{
+    width: 100%;
+}
+.panel a{
+    border-right: white solid;
+    padding-right: 10px;
+    margin-left: 10px;
+    color: white;
+    font-size: 30px;
+}
+.panelMain{
+    height: 20px;
+    background-color: #FF6B00;
+}
+
+a:hover{
+    color: gray;
+}
+@media(min-width:645px){
+    
+}
