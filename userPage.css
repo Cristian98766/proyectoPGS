@@ -61,8 +61,11 @@ a{
 
 .panel{
     width: 100%;
+    display: flex;
+    height: 100%;
+    padding-left: 2%;
 }
-.panel a{
+.panel div a{
     border-right: white solid;
     padding-right: 10px;
     margin-left: 10px;
@@ -70,13 +73,24 @@ a{
     font-size: 30px;
 }
 .panelMain{
-    height: 20px;
+    height: 53px;
     background-color: #FF6B00;
+    padding: 0px;
 }
 
-a:hover{
-    color: gray;
+.panelMain .panel div{
+    height: 100%;
+    width: auto;
+    cursor: pointer;
+    align-items: center;
+    display: grid;
 }
+
+.panelMain .panel div:hover{
+    background-color: #c55708;
+    height: 60px;
+}
+
 @media(min-width:645px){
     
 }
