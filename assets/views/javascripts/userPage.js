@@ -23,7 +23,7 @@ function mostrarMenu() {
             $(".menu-dashboard").css("max-width", "300px");
             $(".menu-dashboard").css("max-height", "100%");
             $(".principal").css("max-height", "1700px");
-            $(".menu").css("display", "block");
+            $(".menu").css("display", "grid");
             $(".top-menu .logo, .input-search").css("display", "flex");
         }
         iconoMenu.classList.replace("bx-menu", "bx-x")
@@ -51,7 +51,7 @@ function mostrarMenu() {
             $(".menu-dashboard").css("max-width", "300px");
             $(".menu-dashboard").css("max-height", "100%");
             $(".principal").css("max-height", "1700px");
-            $(".menu").css("display", "block");
+            $(".menu").css("display", "grid");
             $(".top-menu .logo, .input-search").css("display", "flex");
         }
     }
