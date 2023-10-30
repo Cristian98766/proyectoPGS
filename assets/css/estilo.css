@@ -4,269 +4,133 @@
     font-family: fuente5;
 }
 
-body{
-    background-color: rgb(241, 223, 201);
+.header{
+    background-color: #da800a;
+    height: 80px;
+    text-align: right;
 }
 
-
-header{
-    width: 100%;
-    height: 70px ;
-    background: #da800a ;
-    color: #fff;
-    position: fixed;
-    top: 0 ;
-    left: 0;
-    z-index: 100;
+#homepage{
+    margin-top: 1%;
+    font-size: 25px;
+    border-radius: 50px;
+    color: rgb(95, 95, 95);
+}
+.boton{
+    margin-right: 10%;
 }
 
-.home{
+.color{
+    display: flex;
+}
+
+.colores{
+    height: 10px;
+    width: 25%;
+}
+
+#azul{
+    background-color: rgb(31, 118, 158);
+}
+#amarillo{
+    background-color: rgb(233, 215, 52);
+}
+#verde{
+    background-color: rgb(29, 194, 14);
+}
+#rojo{
+    background-color: rgb(201, 5, 5);
+}
+
+.container{
+    margin-block: 100px;
+}
+
+.unibank{
+    margin-block: 100px;
+}
+
+.imagenes{
+    background:-webkit-linear-gradient(top,#ecdada, #dde7e9);
     display: flex;
     flex-wrap: wrap;
-}
-.in-flex{
-    flex: 1;
-    min-width: 150px;
-    margin-top: 80px;
-}
-.in-flex:first-child{
-    flex: 2;
-    padding: 25px;
-    background-color: #fff;
-    margin-top: 80px;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-bottom: 0px;
-    font-family: fuente5;
+    border-radius: 20px;
 }
 
-.in-flex div{
-    padding: 25px;
-    background-color: #fff;
-    margin-right: 20px;
-    margin-left: 20px;
+
+.imagen{
+    width: 30%;
+    margin-inline: 7%;
+    margin-block: 4%;
 }
 
-.azul{
-    background-color: rgb(31, 118, 158);
-    width: 430px;
-    height: 10px;
-    top: 70px;
-    position: fixed;
-}
-.amarillo{
-    background-color: rgb(233, 215, 52);
-    width: 430px;
-    height: 10px;
-    left: 350px;
-    position: fixed;
-    top: 70px;
-}
-.verde{
-    background-color: rgb(29, 194, 14);
-    width: 480px;
-    height: 10px;
-    left: 700px;
-    position: fixed;
-    top: 70px;
-}
-.rojo{
-    background-color: rgb(201, 5, 5);
-    width: 430px;
-    height: 10px;
-    left: 1000px;
-    position: fixed;
-    top: 70px;
-}
-.azul1{
-    background-color: rgb(67, 212, 212);
-    width:90px;
-    height: 10px;
-    left: 940px;
-    position: fixed;
-    top: 30px;
+.slogan{
+    padding-block: 10%;
 }
 
-.banco{
-    width: 50px;
-    height: 50px;
-    position: relative;
-    left: 100px;
-    margin-top: 90px;
-    flex-wrap: wrap;
-}
-.banco2{
-    width: 50px;
-    height: 50px;
-    position: relative;
-    left: 450px;
-    margin-top: -30px;
-    flex-wrap: wrap;
-}
-.banco3{
-    width: 50px;
-    height: 50px;
-    position: relative;
-    left: 130px;
-    margin-top: 200px;
-    flex-wrap: wrap;
-}
-.banco4{
-    width: 50px;
-    height: 50px;
-    position: relative;
-    left: 450px;
-    margin-top: -50px;
-    flex-wrap: wrap;
-}
-.banco5{
-    width: 50px;
-    height: 50px;
-    position: relative;
-    left: 800px;
-    margin-top: -30px;
-    flex-wrap: wrap;   
-}
-.contenedor{
-    background:-webkit-linear-gradient(top,#ecdada, #dde7e9);
-    width: 750px;
-    height: 500px;
-    border-radius: 30px;
-    margin-left: 10px;
-}
-.tex{
-    font-family: fuente7;
-    font-size: 60px;
-    color: rgb(0, 0, 0);
-    text-align: right;
-    font-style: normal;
-    font-weight: normal;
-    position: relative;
-    padding-right: 220px;
-    top: -460px;
-}
-.tex2{
-    font-family: fuente7;
-    font-size: 60px;
-    color: rgb(0, 0, 0);
-    text-align: right;
-    font-style: normal;
-    font-weight: normal;
-    position: relative;
-    padding-right: 400px;
-    top: -100px;
-}
-.tex3{
-    font-family: fuente7;
-    font-size: 60px;
-    color: rgb(0, 0, 0);
-
-    position: relative;
-    padding-left: 395px;
-    top: 95px;
-}
-header img{
-    width: 50px;
-    position: relative;
-    left: 1120px;
-    margin-top: -10px;
-    padding-right: 80px;
-}
-p{
-    font-family: fuente5;
-    font-size: 30px;
-    padding-left: 250px;
-    right: 150px;
-}
-.parrafo{
-    font-family: fuente5;
-    font-size: 30px;
+.slogan h3, .slogan p{
     text-align: center;
-    margin-top: -70px;
-    padding-left: 30px;
 }
-.contenedor2{
+.slogan h3{
+    font-size: 55px;
+}
+.slogan p{
+    font-size: 30px;
+    margin-inline: 5%;
+}
+
+.objetivo h2, .objetivo p{
+    text-align: center;
+}
+.objetivo h2{
+    font-size: 50px;
+}
+.objetivo p{
+    margin-inline: 10%;
+    font-size: 30px;
+    margin-bottom: 5%;
+}
+
+.logos{
     background:-webkit-linear-gradient(top,#ecdada, #dde7e9);
-    width: 1100px;
-    height: 300px;
     border-radius: 30px;
-    align-content: center;
-    margin-left: 150px;
-    margin-top: -50px;
+    padding-block: 4%;
+}
+
+.imagen2{
+    width: 20%;
+    margin-inline: 6%;
+}
+.mail{
+    justify-content: center;
+    text-align: center;
+}
+.soporte{
+    margin-top: 7%;
+}
+.soporte p{
+    font-size: 50px;
+}
+.soporte img{
+    width: 150px;
+}
+
+footer{
+    margin-top: 5%;
+}
+
+.descripcion{
+    font-size: larger;
+    font-weight: bold;
 }
 .contacto{
-    width: 50px;
-    height: 50px;
-    position: relative;
-    margin-left: 625px;
-    margin-top: 55px;
-    flex-wrap: wrap;
+    font-size: large;
 }
-.delgado{
-    background-color: rgb(214, 210, 214);
-    width:800px;
+.linea{
     height: 1px;
-    position: relative;
-    left: 280px;
-    top: 0px;
+    background-color: rgb(163, 163, 163);
+    margin-block: 2%;
 }
-.pafre{
-    font-size: 25px;
-   font-family: fuente5;
-   color: rgb(0, 0, 0);
-   text-align: right;
-   position: relative;
-   right: 150px ;
-   top: -60px;
-   font-style: normal;
-   font-weight: normal;
+.pie{
+    margin-block: 4%;
 }
-.pa1{
-    font-size: 25px;
-   font-family: fuente5;
-   color: rgb(0, 0, 0);
-   text-align: left;
-   position: relative;
-   left: 150px ;
-   font-style: normal;
-   font-weight: normal;
-}
-.pafrex{
-    font-size: 25px;
-   font-family: fuente5;
-   color: rgb(0, 0, 0);
-   text-align: right;
-   position: relative;
-   right: 150px ;
-   top: -30px;
-   font-style: normal;
-   font-weight: normal;
-}
-.btn1{
-    background:-webkit-linear-gradient(top,#59b8f7, #dde7e9);
-    width: 200px;
-    height: 50px;
-    border-radius: 30px;
-    position: relative;
-    left: 1000px;
-    top: 10px;
-    font-family: fuente5;
-    font-size: 30px;
-}
-
-
-@font-face {
-    font-family:'fuente5';
-    src: url('../font/Montserrat-ExtraLight.ttf');
-    font-weight: normal;
-    font-style: normal;
-  }
-
-
-  @font-face {
-    font-family:'fuente7';
-    src: url('../font/Montserrat-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
-  }
-

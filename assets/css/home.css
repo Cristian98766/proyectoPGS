@@ -9,7 +9,7 @@
 }
 body{
     background-color: rgb(255, 255, 255);
-    min-width: 1000px;
+
 }
 header{
     width: 100%;
@@ -21,6 +21,7 @@ header{
     left: 0;
     z-index: 1;
     padding-bottom: 0px;
+    text-align: right;
 }
 .colores{
     width: 25%;
@@ -43,13 +44,15 @@ header{
 
 .tex{
     font-family: fuente7;
-    font-size: 70px;
+    font-size: 400%;
     color: rgb(0, 0, 0);
     text-align: center;
     align-items: center;
     font-style: normal;
     font-weight: normal;
     position: relative;
+    width: 60%;
+    margin: auto;
     margin-top: 170px;
 }
 .banco{
@@ -75,7 +78,7 @@ header{
 }
 #botones{
     margin: auto;
-    margin-top: 3%;
+    margin-block: 3%;
     width: 450px;
     display: flex;
 }
@@ -97,10 +100,15 @@ header{
     height: 50px;
     border-radius: 30px;
     position: relative;
-    left: 75%;
     margin-top: 0.3%;
     font-family: fuente5;
     font-size: 30px;
+    margin-right: 10%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
 
