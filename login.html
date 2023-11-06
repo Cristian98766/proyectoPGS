@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="csslogin.css">
     <link rel="stylesheet" href="registro.css">
     <title>Loggeate o registrate</title>
-    <script src="login.js" defer></script>
+    <script src="login.js" type = "module" defer></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
 </head>
 <STYLE>A {text-decoration: none;} </STYLE>
@@ -52,7 +52,7 @@
                 <p id="mensaje" class="campo">Las contraseñas no coinciden</p>
                 <input type="password" class="dato" name="pass2" id="pass2" placeholder="Confirmar contraseña"><br>
 
-                <label for="estudiante" class="campo">
+                <label for="estudiante" class="campo" id="calidadUsuario">
                     ¿Eres estudiante del ITM?
                 </label><br>
                 <div class="campo">
