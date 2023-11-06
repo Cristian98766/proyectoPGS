@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/home.css">
+    <link rel="stylesheet" type="text/css" href="../css/registro.css">
+    <script src="javascripts/login.js" defer></script>
+    <!-- <script src="../../../../node_modules/jquery/dist/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>UniBank</title>
+    </head>
+    <STYLE>A {text-decoration: none;} </STYLE>
+    <body>
+        <header>
+            <button class="btn3 succes"><a href="../../index.html">volver</a></button>
+            <div class="titlep"><a href="homepage.html"></a> </div>
+            <div class="colores" id="azul">  </div>
+            <div class="colores" id="amarillo">  </div>
+            <div class="colores" id="verde">  </div>
+            <div class="colores" id="rojo">  </div>
+        </header>
+    
+        <div id="contenido">
+            <div class="tex">HAZTE MIEMBRO DE NUESTRA COMUNIDAD</div>
+            <div class="banco"><img src="../img/mainLogoOrange.png" alt="UniBank" width="30%" id="logo" title="UniBank"><p class="tex2">NIBANK</p></div>
+
+            <div id="botones">
+                <button class="btn succes" id="registrarse">Registrate</button>
+                <button class="btn succes"><a href="login.html"> Iniciar Sesion</button></a>
+            </div>
+
+            <div id="contenedor" class="ventana">
+                <div class="vent">
+                    <a href="#" title="cerrar"> <img src="../img/error.png" alt="error" id="x" class="cerrar"> </a>
+                    <form action="/register" class="formulario" method="POST">
+                        <label for="nombre" class="campo">Nombre</label><br>
+                        <input type="text" class="dato" name="nombre" id="nombre" placeholder="Nombre"><br>
+
+                        <label for="apellido" class="campo"">Apellido</label><br>
+                        <input type="text" class="dato" name="apellido" id="apellido" placeholder="Apellido"><br>
+
+                        <label for="correo" class="campo">Correo electrónico</label><br>
+                        <input type="email" class="dato" name="correo" id="correo" placeholder="Correo electrónico"><br>
+
+                        <label for="pass" class="campo">Contraseña</label><br>
+                        <input type="password" class="dato" name="pass" id="pass" placeholder="Contraseña"><br>
+
+                        <label for="pass2" class="campo" id="confirm">Confirmar contraseña</label><br>
+                        <p id="mensaje" class="campo">Las contraseñas no coinciden</p>
+                        <input type="password" class="dato" name="pass2" id="pass2" placeholder="Confirmar contraseña"><br>
+
+                        <label for="estudiante" class="campo">
+                            ¿Eres estudiante del ITM?
+                        </label><br>
+                        <div class="campo">
+                            <label for="si" class="estudiante">Sí</label>
+                            <input type="radio" name="estudiante" id="si">
+                            <label for="no" class="estudiante">No</label>
+                            <input type="radio" name="estudiante" id="no"><br>
+                        </div>
+
+                        <button type="submit" class="confirmar" id="confirmar"><b>Confrimar registro</b></button>
+                        <p id="aviso">Debe diligenciar todos los campos</p>
+                        
+                    </form>
+                </div>  
+            </div>
+
+            <!-- <div id="exitoso" class="ventana">
+                <div class="vent" id="exito">
+                    <img src="../img/error.png" alt="error" id="X" class="cerrar">
+                    <p class="campo" id="melo">El registro ha sido exitoso<img src="../img/exitoso.png" alt="exitoso" id="comprobado"></p>
+                    <button type="button" class="confirmar" id="aceptar">Aceptar</button>
+                </div> 
+            </div>     -->
+        </div>
+    </body>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/userPage.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- <script src="../../../../node_modules/jquery/dist/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="javascripts/userPage.js" defer></script>
+</head>
+<body>
+    <header>
+        
+        <div class="logo">
+            <img src="../img/mainLogoOrange.png" alt="unibank">
+            <h2 class="unibank-nombre">UniBank</h2>
+        </div>
+        <div class="saldo">
+            <a href="#" id="dinero">$1000.00</a>    <!--Aqui se mostrara el dinero*/-->
+            <img src="../img/hpResource2.png" alt="saldo">
+        </div>
+    </header>
+    <!-- Aqui va asidebar -->
+    <div class="principal">
+        <div class="menu-dashboard">
+            <!-- MENU parte superior -->
+            <div class="top-menu">
+                <div class="logo">
+                    <img src="../img/hpResource1.png" alt="">
+                    <span id="username">NombreUsuario</span>
+                </div>
+                <div class="toggle" id="toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </div>
+            <!-- busqueda -->
+            <div class="input-search">
+                <i class="bi bi-search"></i>
+                <input type="text" class="input" placeholder="Buscar">
+            </div>
+            <!-- MENU -->
+            <div class="menu">
+                <div class="enlace">
+                    <i class="bi bi-house"></i>
+                    <span>Inicio</span>
+                </div>
+
+                <div class="enlace">
+                    <i class="bi bi-person"></i>
+                    <span id="micuenta">Mi Cuenta</span>
+                </div>
+
+                <div class="enlace">
+                    <i class="bi bi-wallet"></i>
+                    <span>Billetera</span>
+                </div>
+
+                <div class="enlace">
+                    <i class="bi bi-bell"></i>
+                    <span>Notificaciones</span>
+                </div>
+
+                <div class="enlace">
+                    <i class="bi bi-arrow-left-right"></i>
+                    <span>Transacciones</span>
+                </div>
+
+                <div class="enlace">
+                    <i class="bi bi-clock-history"></i>
+                    <span>Historial Transaccional</span>
+                </div>
+
+                <div class="enlace">
+                    <i class="bi bi-file-earmark-richtext"></i>
+                    <span>Certificados</span>
+                </div>
+
+                <div class="enlace">
+                    <i class="bi bi-gear"></i>
+                    <span>Configuración</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="contenido">
+            <div class="servicios">
+                <h2>SERVICIOS</h2>
+                <div class="elemento">
+                    <h2>Transferir</h2>
+                    <img src="../img/transferir.png" alt="transferir" class="iconos">
+                </div>
+                <div class="elemento">
+                    <h2>Recargar</h2>
+                    <img src="../img/recargar.png" alt="recargar" class="iconos">
+                </div>
+                <div class="elemento">
+                    <h2>Recibir</h2>
+                    <img src="../img/recibir.png" alt="recibir" class="iconos">
+                </div>
+                <div class="elemento">
+                    <h2>Pagos</h2>
+                    <img src="../img/pagos.png" alt="pagos" class="iconos">
+                </div>
+                <div class="elemento">
+                    <h2>Préstamos</h2>
+                    <img src="../img/prestar.png" alt="préstamo" class="iconos">
+                </div>
+                <div class="elemento">
+                    <h2>Soporte</h2>
+                    <img src="../img/soporte.png" alt="soporte" class="iconos">
+                </div>
+            </div>
+            <footer>
+                <div class="pie">
+                    <h4>Te puede interesar</h4>
+                    <ul>
+                        <li><a href="#">Canales</a></li>
+                        <li><a href="#">Puntos de atención</a></li>
+                        <li><a href="#">Accesibilidad</a></li>
+                        <li><a href="#">Atención al usuario</a></li>
+                    </ul>
+                </div>
+                <div class="pie">
+                    <h4>Ausntos legales</h4>
+                    <ul>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Derechos de autor</a></li>
+                        <li><a href="#">Uso de cookies</a></li>
+                        <li><a href="#">Copyright © 2023 UniBank</a></li>
+                    </ul>
+                </div>
+                <div class="pie">
+                    <h4>Contáctanos</h4>
+                    <ul>
+                        <li>Carrea 77A #12-33</li>
+                        <li><a href="#">+57 (602) 343 3020</a></li>
+                        <li><a href="#">+57 (602) 743 0000</a></li>
+                    </ul>
+                </div>
+
+                <div class="linea"></div>
+
+                <div class="redes">
+                    <img src="../img/facebook.png" alt="facebook" class="red" title="Facebook">
+                    <img src="../img/instagram.png" alt="instagram" class="red" title="Instagram">
+                    <img src="../img/whatsapp.png" alt="whatsapp" class="red" title="WhatsApp">
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script>
+    document.getElementById('micuenta').addEventListener('click', function() {
+        var URLactual = window.location;
+        const url = String(URLactual);
+        const partes = url.split('=');
+        const id = partes[partes.length - 1];
+        const link = "http://localhost:3000/assets/views/perfil.html?id="+id;
+        window.location.href = link;
+    });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
