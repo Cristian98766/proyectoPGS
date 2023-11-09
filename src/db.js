@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const conectarBD = async () => {
     try {
-        await mongoose.connect("mongodb://localhost:27017/unibank");
+        await mongoose.connect("mongodb+srv://megamanchi:RXNIU8fAmXziiXPO@unibank.ev1hfbd.mongodb.net/UniBnak");
         console.log("Se ha conectado la base de datos")
     } catch (error) {
         console.log(error);
