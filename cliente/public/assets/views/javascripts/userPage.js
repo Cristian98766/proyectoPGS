@@ -62,13 +62,11 @@ var URLactual = window.location;
 const url = String(URLactual);
 const partes = url.split('=');
 const id = partes[partes.length - 1];
-console.log(id);
-console.log(url);
-fetch('http://localhost:3000/datos/'+id) 
+
+fetch('/datos/'+id) 
     .then(response => response.json()) 
     .then(data => {
         $("#username").text(data.nombre+" "+data.apellido);
-        console.log(data.nombre);
         $('#nom').attr('value', data.nombre);
         $('#apell').attr('value', data.apellido);
         $('#corr').attr('value', data.correo);

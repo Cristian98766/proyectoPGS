@@ -46,8 +46,9 @@ app.post('/register', (req, res) => {
         }
 
         usuarioModelo.create(usuario).then(() => {
+          console.log('Usuario registrado: ');
+          console.log(usuario);
           res.send('Usuario registrado correctamente');
-          console.log(`Usuario registrado: ${req.body}`);
       }).catch((error) => {
           console.log('Error al guardar usuario');
           res.status(500).send(`Error al crear el usuario: ${error}`);
@@ -115,7 +116,7 @@ app.post('/actualizar', (req, res) => {
     });
 });
 
-app.use(express.static('c:/Users/Sebastian/Desktop/Proyecto_PGS/cliente/public/'));
+app.use(express.static('./cliente/public/'));
 
 app.listen(puerto, () => {
     console.log(`Este es el puerto ${puerto}`)
